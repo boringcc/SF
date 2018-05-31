@@ -1,13 +1,7 @@
 package Linklist;
 
 public class CommonPart_34 {
-    public class Node{
-        public int value;
-        public Node next;
-        public Node (int data){
-            this.value = data;
-        }
-    }
+
 
     public void printCommentPart(Node head1,Node head2){
         while (head1 != null && head2 != null){

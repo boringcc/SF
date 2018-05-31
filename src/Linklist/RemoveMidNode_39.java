@@ -1,13 +1,6 @@
 package Linklist;
 
 public class RemoveMidNode_39 {
-    public class Node{
-        public int value;
-        public Node next;
-        public Node (int data){
-            this.value = data;
-        }
-    }
 
     public Node removeMidNode(Node head){
         if (head == null || head.next == null){

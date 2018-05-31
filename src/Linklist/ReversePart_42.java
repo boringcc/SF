@@ -1,13 +1,6 @@
 package Linklist;
 
 public class ReversePart_42 {
-    public class Node{
-        public int value;
-        public Node next;
-        public Node (int data){
-            this.value = data;
-        }
-    }
 
     public Node reversePart(Node head, int from,int to){
         int len = 0;

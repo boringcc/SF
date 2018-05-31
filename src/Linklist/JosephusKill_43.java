@@ -2,13 +2,6 @@ package Linklist;
 
 public class JosephusKill_43 {
 
-    public class Node{
-        public int value;
-        public Node next;
-        public Node (int data){
-            this.value = data;
-        }
-    }
 
     public Node josephusKill1(Node head,int m){
         if (head == null || head.next == head || m < 1){
