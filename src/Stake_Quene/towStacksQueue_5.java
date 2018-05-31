@@ -2,12 +2,12 @@ package Stake_Quene;
 
 import java.util.Stack;
 
-public class towStacksQueue {
+public class towStacksQueue_5 {
 
     private Stack<Integer> stackPush;
     private Stack<Integer> stackPop;
 
-    public towStacksQueue(){
+    public towStacksQueue_5(){
         this.stackPush = new Stack<Integer>();
         this.stackPop = new Stack<Integer>();
     }

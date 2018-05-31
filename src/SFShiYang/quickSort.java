@@ -1,11 +1,11 @@
 package SFShiYang;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 public class quickSort {
+public static int count=0;
 
     public static void sort(int[] a) {
         sort(a, 0, a.length - 1);
@@ -22,7 +22,7 @@ public class quickSort {
 
     private static int partition(int[] a, int lo, int hi) {
         int i = lo, j = hi + 1;
-        exch(a,lo,(int)(Math.random()*(hi - lo + 1)+lo));
+        //exch(a,lo,(int)(Math.random()*(hi - lo + 1)+lo));
         int v = a[lo];
         while (true) {
             while (less(a[++i], v)) {
@@ -46,11 +46,16 @@ public class quickSort {
 
 
     //判断是否前一个比后一个小
-    public static boolean less(Comparable v, Comparable w) {
-        return v.compareTo(w) < 0;
+    public static boolean less(int v, int w) {
+        if(v <= w){
+            return true;
+        }else {
+            return false;
+        }
     }
     //交换
     public static void exch(int[] a, int i, int j) {
+        count++;
         int t = a[i];
         a[i] = a[j];
         a[j] = t;
@@ -70,41 +75,34 @@ public class quickSort {
 
     public static void main(String[] args) throws IOException {
 
-        int size = 60;
-        List<Integer> toFile = new ArrayList();
-        for(int x = 0 ; x < size ;x++){
-            toFile.add(x);
+        List<String> testList = new ArrayList<String>();
+        File file = new File("E:\\test\\quick.txt");
+        String test = null;
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        while ((test = br.readLine())!=null){
+            testList.add(test);
         }
-        createEx(size,toFile);
-        File file = new File("E:\\text.txt");
+        for(int j = 0;j<testList.size();j++) {
+            test = testList.get(j);
+            br.close();
+            String[] a = test.split(",");
+            int[] b = new int[a.length];
+            for (int i = 0; i < a.length; i++) {
+                b[i] = Integer.parseInt(a[i]);
+            }
 
-        BufferedReader in = new BufferedReader(new FileReader(file));
-        String line = null;
-        int row = 0;
+            sort(b);
 
-        List read =new ArrayList();
-        int i = 0;
-        while ((line = in.readLine())!=null){
-            read.add(line);
-            i++;
+            System.out.println("第 " + j +" 组样例交换次数:" + count);
+            for (int i = 0; i < a.length; i++) {
+                System.out.print(b[i]);
+                System.out.print(",");
+            }
+            System.out.println();
+            count=0;
         }
-        int[] a = new int[i];
 
 
-        for(int j=0;j < a.length ; j++){
-            a[j] = (int) read.get(j);
-            System.out.println(a[j]);
-        }
-        Long time1 = System.currentTimeMillis();
-        sort(a);
-        Long time2 = System.currentTimeMillis();
-        System.out.println("数组求和所花费时间：" + (time2 - time1) + "毫秒");
-
-        System.out.println("------------");
-        for(int j=0;j < a.length ; j++){
-            System.out.println(a[j]);
-        }
-        in.close();
     }
 
 

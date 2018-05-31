@@ -2,11 +2,11 @@ package Stake_Quene;
 
 import java.util.Stack;
 
-public class StackSort {
+public class StackSort_13 {
 
     private Stack<Integer> stack;
 
-    public StackSort(){
+    public StackSort_13(){
         this.stack = new Stack<Integer>();
     }
 

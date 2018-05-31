@@ -5,10 +5,10 @@ import java.util.Stack;
 /**
  * 题目：用递归函数和栈操作逆序一个栈
  */
-public class Stack3 {
+public class Stack3_8 {
     private Stack<Integer> stack;
 
-    public Stack3(){
+    public Stack3_8(){
         this.stack = new Stack<Integer>();
     }
 

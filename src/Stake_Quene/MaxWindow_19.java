@@ -2,7 +2,7 @@ package Stake_Quene;
 
 import java.util.LinkedList;
 
-public class MaxWindow {
+public class MaxWindow_19 {
 
     public int[] getMaxWindow(int[] arr,int w){
         if(arr == null||w<1||arr.length < w){

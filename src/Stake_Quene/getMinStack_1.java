@@ -2,12 +2,12 @@ package Stake_Quene;
 
 import java.util.Stack;
 
-public class getMinStack {
+public class getMinStack_1 {
 
     private Stack<Integer> stackData;
     private Stack<Integer> stackMin;
 
-    public getMinStack(){
+    public getMinStack_1(){
         this.stackData = new Stack<Integer>();
         this.stackMin = new Stack<Integer>();
     }

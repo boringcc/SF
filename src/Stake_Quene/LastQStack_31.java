@@ -3,7 +3,7 @@ package Stake_Quene;
 import java.util.LinkedList;
 
 //最大值减去最小值小于或等于num的子数组数量
-public class LastQStack {
+public class LastQStack_31 {
     public int getNum(int[] arr,int num){
         if(arr == null || arr.length == 0){
             return 0;

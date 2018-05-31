@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class MaxTree {
+public class MaxTree_22 {
     //树结构
     public class  Node{
         public int value;

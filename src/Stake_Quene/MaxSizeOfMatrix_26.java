@@ -2,7 +2,7 @@ package Stake_Quene;
 
 import java.util.Stack;
 
-public class MaxSizeOfMatrix {
+public class MaxSizeOfMatrix_26 {
 
 
 
