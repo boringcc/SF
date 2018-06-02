@@ -16,21 +16,26 @@ public static int count=0;
             return;
         }
         int j = partition(a, lo, hi);
-        sort(a, lo, j - 1);
-        sort(a, j + 1, hi);
+        if(lo != j-1 && j+1!=hi) {
+            sort(a, lo, j - 1);
+            sort(a, j + 1, hi);
+        }
     }
 
     private static int partition(int[] a, int lo, int hi) {
         int i = lo, j = hi + 1;
-        //exch(a,lo,(int)(Math.random()*(hi - lo + 1)+lo));
+        exch(a,lo,(int)(Math.random()*(hi - lo + 1)+lo));
+        count++;
         int v = a[lo];
         while (true) {
             while (less(a[++i], v)) {
+                count++;
                 if (i == hi) {
                     break;
                 }
             }
             while (less(v, a[--j])) {
+                count++;
                 if (j == lo) {
                     break;
                 }
@@ -40,9 +45,50 @@ public static int count=0;
             }
             exch(a, i, j);
         }
+        if(lo != j){
         exch(a, lo, j);
+        }
         return j;
     }
+
+    public static void quick_sort(int[] a) {
+        quick_sort(a, 0, a.length - 1);
+    }
+
+    public static void quick_sort(int a[],int lo,int hi){
+        if(lo < hi){
+            int i = lo;
+            int j = hi;
+            exch(a,lo,(int)(Math.random()*(hi - lo + 1)+lo));
+            count++;
+            int temp = a[lo];
+            while (i < j){
+                while (i < j && a[j] > temp){
+                    j--;
+                    count++;
+                }
+                if (i < j){
+                    a[i] = a[j];
+                    i++;
+                    count++;
+                }
+                while (i < j && a[i] < temp){
+                    i++;
+                    count++;
+                }
+                if(i < j){
+                    a[j] = a[i];
+                    j--;
+                    count++;
+                }
+            }
+            a[i] = temp;
+            count++;
+            quick_sort(a,lo,i-1);
+            quick_sort(a,i+1,hi);
+        }
+    }
+
 
 
     //判断是否前一个比后一个小
@@ -57,6 +103,7 @@ public static int count=0;
     public static void exch(int[] a, int i, int j) {
         count++;
         int t = a[i];
+        int x = a[j];
         a[i] = a[j];
         a[j] = t;
     }
@@ -93,7 +140,7 @@ public static int count=0;
 
             sort(b);
 
-            System.out.println("第 " + j +" 组样例交换次数:" + count);
+            System.out.println("第 " + j +" 组样例交换次数:" + count +" 数组本身长度 " + a.length);
             for (int i = 0; i < a.length; i++) {
                 System.out.print(b[i]);
                 System.out.print(",");
@@ -104,8 +151,5 @@ public static int count=0;
 
 
     }
-
-
-
 
 }

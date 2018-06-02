@@ -6,6 +6,7 @@ import java.io.*;
 import java.util.*;
 
 public class oneZeroBag {
+
     public static void main(String[] args) throws IOException {
 
         List<String> testList = new ArrayList<String>();
@@ -65,13 +66,16 @@ public class oneZeroBag {
 
     }
 
+
     public static int TX(int m, int n,int [] w,int[] p){
         ArrayList<Integer> valueList = new ArrayList<Integer>();
-        Map<String,Integer> map  = new HashMap<String, Integer>();
+        Map<String,Double> map  = new HashMap<String, Double>();
+        double[] value = new double[n];
         for(int i = 0; i < n;i++){
-            map.put(Integer.toString(i+1),p[i]);
+           value[i] = (p[i]*1.0)/(w[i]*1.0);
+            map.put(Integer.toString(i+1),value[i]);
         }
-        map = sortMap((HashMap<String, Integer>) map);
+        map = sortMap((HashMap<String, Double>) map);
         int result = 0;
         Set<String> keySet = map.keySet();
         Iterator<String> iter = keySet.iterator();
@@ -82,7 +86,7 @@ public class oneZeroBag {
                 continue;
             }else {
                 m-=w[i-1];
-                result+=map.get(key);
+                result+=p[i-1];
                 System.out.println("第" + i + "个物品的重量" + w[i-1]);
                 System.out.println("第" + i + "个物品放入");
             }
@@ -90,6 +94,7 @@ public class oneZeroBag {
         System.out.println("最大价值为:" + result);
         return result;
     }
+
 
     /**
      * @param m 表示背包的最大容量
@@ -130,8 +135,7 @@ public class oneZeroBag {
     }
 
 
-
-    private static HashMap<String, Integer> sortMap(HashMap<String, Integer> oldhMap) {
+    private static HashMap<String,Double> sortMap(HashMap<String, Double> oldhMap) {
 
         /*
          *   在 Collections 有个排序的方法  sort(List<T> list, Comparator<? super T> comparator)
@@ -139,25 +143,29 @@ public class oneZeroBag {
          */
 
         //把map转成Set集合
-        Set<Map.Entry<String, Integer>> set = oldhMap.entrySet();
+        Set<Map.Entry<String, Double>> set = oldhMap.entrySet();
 
         //通过set 创建一个 ArrayList 集合
-        ArrayList<Map.Entry<String, Integer>> arrayList = new ArrayList<>(set);
+        ArrayList<Map.Entry<String, Double>> arrayList = new ArrayList<>(set);
 
         //对arraylist进行倒序排序
-        Collections.sort(arrayList, new Comparator<Map.Entry<String, Integer>>() {
+        Collections.sort(arrayList, new Comparator<Map.Entry<String, Double>>() {
 
             @Override
-            public int compare(Map.Entry<String, Integer> arg0,
-                               Map.Entry<String, Integer> arg1) {
+            public int compare(Map.Entry<String, Double> arg0,
+                               Map.Entry<String, Double> arg1) {
                 //逆序 就用后面的参数 - 前面的参数
-                return arg1.getValue() - arg0.getValue();
+                 if(arg1.getValue() - arg0.getValue() > 0){
+                    return 1;
+                 }else {
+                     return 0;
+                 }
             }
         });
         //创建一个map
-        LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+        LinkedHashMap<String, Double> map = new LinkedHashMap<>();
         for (int i = 0; i < arrayList.size(); i++) {
-            Map.Entry<String, Integer> entry = arrayList.get(i);
+            Map.Entry<String, Double> entry = arrayList.get(i);
             map.put(entry.getKey(), entry.getValue());
         }
         return map;
