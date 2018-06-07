@@ -96,9 +96,9 @@ public class TSP {
             for(int i=1;i<=n;i++){//针对每个节点，找到最小出边
                 //计算minOut[i]和minSum
                 float min=Float.MAX_VALUE;
-                for(int j=1;j<=n;j++){
+                for(int j=i;j<=n;j++){
                     if(a[i][j]<Float.MAX_VALUE&&a[i][j]<min) {
-                        min = -1;
+                        min = 0;
                     }
                 }
                 if(min==Float.MAX_VALUE) {
@@ -131,7 +131,6 @@ public class TSP {
                         enode.cc=bestc;
                         enode.lcost=bestc;
                         enode.s++;
-                        heap.add(enode);
                         Collections.sort(heap);
                         result = x;
                     }

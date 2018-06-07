@@ -101,9 +101,8 @@ public static int count=0;
     }
     //交换
     public static void exch(int[] a, int i, int j) {
-        count++;
+        count = count+3;
         int t = a[i];
-        int x = a[j];
         a[i] = a[j];
         a[j] = t;
     }

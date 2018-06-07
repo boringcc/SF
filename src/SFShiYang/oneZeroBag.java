@@ -17,6 +17,7 @@ public class oneZeroBag {
             testList.add(test);
         }
         for(int j1 = 0;j1<testList.size();j1++) {
+            System.out.println("第"+ (j1+1) +"个样例");
             String anli = testList.get(j1);
             String[] anli1 = anli.split(" ");
             String[] anliW = anli1[2].split(",");
@@ -33,8 +34,11 @@ public class oneZeroBag {
             }
 
             int[] road = new int[n];
+            System.out.println("贪心法的结果");
             TX(m, n, w, p);
 
+            System.out.println();
+            System.out.println("回溯法的结果");
             int c[][] = BackPack_Solution(m, n, w, p);
             for (int i = 1; i <= n; i++) {
                 for (int j = 1; j <= m; j++) {
@@ -62,6 +66,7 @@ public class oneZeroBag {
                     System.out.println("物品" + (y + 1) + "放入");
                 }
             }
+            System.out.println("------------");
         }
 
     }
@@ -92,6 +97,7 @@ public class oneZeroBag {
             }
         }
         System.out.println("最大价值为:" + result);
+
         return result;
     }
 
