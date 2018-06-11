@@ -17,7 +17,7 @@ public class oneZeroBag {
             testList.add(test);
         }
         for(int j1 = 0;j1<testList.size();j1++) {
-            System.out.println("第"+ (j1+1) +"个样例");
+            System.out.println("第"+ (j1+1) +"个样例结果如下：");
             String anli = testList.get(j1);
             String[] anli1 = anli.split(" ");
             String[] anliW = anli1[2].split(",");
@@ -33,23 +33,49 @@ public class oneZeroBag {
                 p[t] = Integer.parseInt(anliP[t]);
             }
 
+            System.out.print("物品编号: ");
+            for(int t = 0;t < n;t++){
+                System.out.printf("%4d ",(t+1));
+            }
+            System.out.println();
+
+            System.out.print("物品价值: ");
+            for(int t = 0;t < n;t++){
+                System.out.printf("%4d ",p[t]);
+            }
+            System.out.println();
+
+            System.out.print("物品重量: ");
+            for(int t = 0;t < n;t++){
+                System.out.printf("%4d ",w[t]);
+            }
+            System.out.println();
+
+
+            System.out.print("单位价值: ");
+            for(int t = 0;t < n;t++){
+                double temp = (p[t]*1.0)/(w[t]*1.0);
+                System.out.printf("%4.2f ",temp);
+            }
+            System.out.println();
+            System.out.println("背包容量为：" + m);
+            System.out.println();
+
             int[] road = new int[n];
-            System.out.println("贪心法的结果");
+            System.out.println("贪心法的结果：");
             TX(m, n, w, p);
 
             System.out.println();
-            System.out.println("回溯法的结果");
+            System.out.println("回溯法的结果：");
             int c[][] = BackPack_Solution(m, n, w, p);
-            for (int i = 1; i <= n; i++) {
-                for (int j = 1; j <= m; j++) {
-                    System.out.print(c[i][j] + "\t");
-                    if (j == m) {
-                        System.out.println();
-                    }
-                }
-            }
-            System.out.println();
-            System.out.println("回溯法求得的最大价值为: " + c[n][m]);
+            //for (int i = 1; i <= n; i++) {
+            //    for (int j = 1; j <= m; j++) {
+            //        System.out.print(c[i][j] + "\t");
+            //        if (j == m) {
+            //            System.out.println();
+            //        }
+            //    }
+            //}
             int i = n;
             int m1 = m;
             while (i > 0) {
@@ -61,12 +87,15 @@ public class oneZeroBag {
 
                 }
             }
+            System.out.print("存入的物品有：");
             for (int y = 0; y < n; y++) {
                 if (road[y] == 1) {
-                    System.out.println("物品" + (y + 1) + "放入");
+                    System.out.print((y + 1) + " ");
                 }
             }
-            System.out.println("------------");
+            System.out.println();
+            System.out.println("最大价值为: " + c[n][m]);
+            System.out.println("------------------------------------------");
         }
 
     }
@@ -84,6 +113,7 @@ public class oneZeroBag {
         int result = 0;
         Set<String> keySet = map.keySet();
         Iterator<String> iter = keySet.iterator();
+        System.out.print("存入的物品有：");
         while (iter.hasNext()) {
             String key = iter.next();
             Integer i = Integer.parseInt(key);
@@ -92,10 +122,10 @@ public class oneZeroBag {
             }else {
                 m-=w[i-1];
                 result+=p[i-1];
-                System.out.println("第" + i + "个物品的重量" + w[i-1]);
-                System.out.println("第" + i + "个物品放入");
+                System.out.print(i+" ");
             }
         }
+        System.out.println();
         System.out.println("最大价值为:" + result);
 
         return result;
@@ -155,8 +185,7 @@ public class oneZeroBag {
         ArrayList<Map.Entry<String, Double>> arrayList = new ArrayList<>(set);
 
         //对arraylist进行倒序排序
-        Collections.sort(arrayList, new Comparator<Map.Entry<String, Double>>() {
-
+        Collections.sort(arrayList,new Comparator<Map.Entry<String, Double>>() {
             @Override
             public int compare(Map.Entry<String, Double> arg0,
                                Map.Entry<String, Double> arg1) {
@@ -164,7 +193,7 @@ public class oneZeroBag {
                  if(arg1.getValue() - arg0.getValue() > 0){
                     return 1;
                  }else {
-                     return 0;
+                     return -1;
                  }
             }
         });
