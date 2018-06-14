@@ -14,7 +14,7 @@ public class Random {
         seed = sd;
     }
 
-    //N(i+1) = (A * Ni + B)%M
+    //N(i+1) = (a * Ni + c)%m
     public  long rand(){
         //seed = (seed * 9301 + 49297)%((1 << 15) - 1);
         //a = 1664525 c = 1013904223 m = 2^32     6310

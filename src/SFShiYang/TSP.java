@@ -11,6 +11,8 @@ import java.util.List;
 
 public class TSP {
 
+    public static int count = 0;
+
     public static class Bttsp {
         public int n;//图G的顶点数
         public int[] x;//当前解
@@ -65,6 +67,7 @@ public class TSP {
         }
 
         public void backtrack(int i){
+            count++;
             if(i==n){
                 if(a[x[n-1]][x[n]]!=-1&&a[x[n]][1]!=-1&&(bestc==10000)||cc+a[x[n-1]][x[n]]+a[x[n]][1]<bestc){
                     for(int j=1;j<=n;j++){
@@ -98,7 +101,7 @@ public class TSP {
                 float min=Float.MAX_VALUE;
                 for(int j=i;j<=n;j++){
                     if(a[i][j]<Float.MAX_VALUE&&a[i][j]<min) {
-                        min = 0;
+                        min = -1;
                     }
                 }
                 if(min==Float.MAX_VALUE) {
@@ -152,6 +155,7 @@ public class TSP {
                                 xx[i]=x[enode.s+1];
                                 HeapNode node=new HeapNode(b,cc,rcost,enode.s+1,xx);
                                 heap.add(node);
+                                count++;
                                 Collections.sort(heap);
                             }
                         }
@@ -196,17 +200,19 @@ public class TSP {
                         }
                     }
                 }
-
-
+                System.out.println("样例：" + (j1+1) );
+                count = 0;
                 //回溯法
                 Bttsp b = new Bttsp(a, n);
                 b.backtrack(2);
+
                 System.out.println("回溯法最短回路长为：" + b.bestc);
+                System.out.println("回溯函数执行次数:" + count);
                 System.out.print("回溯法最短回路为：");
                 for (int i = 1; i <= n; i++) {
                     System.out.print(b.bestx[i] + " ");
                 }
-
+                count = 0;
 
                 //分支界限法
                 int x = n;
@@ -214,12 +220,14 @@ public class TSP {
                 Bttsp b2 = new Bttsp(a);
                 int[] v = new int[x + 1];
                 System.out.println("分支界限法最短回路长为：" + b2.bbTsp(v));
+                System.out.println("分支界限扩展次数:" + count);
                 System.out.print("分支界限法最短回路为：");
                 for (int i = 1; i <= x; i++) {
                     System.out.print(v[i] + " ");
                 }
                 System.out.println();
                 System.out.println();
+                count = 0;
             }
         }
     }
