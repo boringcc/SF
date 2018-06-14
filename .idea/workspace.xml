@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17b0af3-60da-44c8-94ed-833cdc17732c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeProxy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SF/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.class" afterPath="$PROJECT_DIR$/out/production/SF/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SF/MianShi/DongTaiDaiLi/JDK/JDKTest.class" afterPath="$PROJECT_DIR$/out/production/SF/MianShi/DongTaiDaiLi/JDK/JDKTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SF/test/Test.class" afterPath="$PROJECT_DIR$/out/production/SF/test/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java" afterPath="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Test.java" afterPath="$PROJECT_DIR$/src/test/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,24 +36,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookFacadeProxy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookFacadeProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="345">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,18 +72,34 @@
         <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SFShiYang/TSP.java">
+      <file leaf-file-name="people.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/people.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1863">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="207">
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookFacadeImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+              <folding>
+                <element signature="e#126#127#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,14 +224,14 @@
         <option value="$PROJECT_DIR$/src/MianShi/ProducerAndConsumer/SimpleProducer.java" />
         <option value="$PROJECT_DIR$/src/MianShi/ProducerAndConsumer/SimperBQTest.java" />
         <option value="$PROJECT_DIR$/src/MianShi/ProducerAndConsumer/SimpleConsumer.java" />
-        <option value="$PROJECT_DIR$/src/test/Test.java" />
         <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacade.java" />
-        <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.java" />
         <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeProxy.java" />
-        <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java" />
         <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/CGLIB/BookFacadeImpl.java" />
         <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/CGLIB/BookFacadeImpl1.java" />
         <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/CGLIB/BookFacadeCglib.java" />
+        <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java" />
+        <option value="$PROJECT_DIR$/src/test/Test.java" />
       </list>
     </option>
   </component>
@@ -319,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JDKTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="BlockingQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -505,8 +532,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.JDKTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JDKTest" />
         <item index="2" class="java.lang.String" itemvalue="Application.SimperBQTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.BlockingQueueTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.TSP$Bttsp" />
@@ -542,7 +569,7 @@
       <workItem from="1528863646090" duration="4282000" />
       <workItem from="1528957472594" duration="2817000" />
       <workItem from="1528963426489" duration="2736000" />
-      <workItem from="1528979161808" duration="2559000" />
+      <workItem from="1528979161808" duration="4351000" />
     </task>
     <task id="LOCAL-00001" summary="提交部分链表问题">
       <created>1527778457077</created>
@@ -577,7 +604,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171623000" />
+    <option name="totallyTimeSpent" value="173415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,7 +628,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602273" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602273" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48295453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -645,7 +672,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Linklist/printCommonPart_34.java" />
     <entry file="file://$PROJECT_DIR$/src/Linklist/Palindrome_48.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -824,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/people.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -944,22 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/CGLIB/BookFacadeCglib.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -976,21 +979,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/BookFacadeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="115">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MianShi/DongTaiDaiLi/JDK/JDKTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/people.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
