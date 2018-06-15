@@ -2,24 +2,20 @@ package test;
 
 import SFShiYang.TSP;
 
-import java.util.Collections;
-import java.util.HashMap;
-
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Test {
 
-
-
     public static void main(String[] args) {
-        Integer a = 200;
-        int b = 200;
-        Integer c = Integer.valueOf(b);
-        Integer d = new Integer(59);
-        System.out.println(a ==b);
-        System.out.println(a ==c);
-        System.out.println(a ==d);
-
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("d");
+        a.add("c");
+        a.add("1");
+        a.add("4");
+        Collections.sort(a);
+        System.out.println(a);
     }
+
 
 }
