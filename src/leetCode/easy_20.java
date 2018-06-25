@@ -1,19 +1,22 @@
-package test;
+package leetCode;
 
-import SFShiYang.TSP;
+import java.util.Stack;
 
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.concurrent.*;
+/**
+ * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+ 输入: "()"
+ 输出: true
+ 输入: "()[]{}"
+ 输出: true
+ 输入: "(]"
+ 输出: false
 
-public class Test {
-
-    public static void main(String[] args) {
-
-        String s = "){";
+ */
+public class easy_20 {
+    public boolean isValid(String s) {
         char[] s1 = s.toCharArray();
         if (s1.length % 2 != 0) {
-            System.out.println(0);;
+            return false;
         }
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s1.length; i++) {
@@ -43,10 +46,9 @@ public class Test {
             }
         }
         if (stack.isEmpty()) {
-            System.out.println(1);;
+            return true;
         } else {
-            System.out.println(0);;
+            return false;
         }
     }
 }
-
