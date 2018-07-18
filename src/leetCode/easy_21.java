@@ -1,13 +1,7 @@
 package leetCode;
 
 public class easy_21 {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
+
     //最快答案
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
         if(l1==null){
