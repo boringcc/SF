@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17b0af3-60da-44c8-94ed-833cdc17732c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/ListNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/TreeNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/easy_100.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/easy_101.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/easy_70.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/easy_86.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/esay_83.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SF/leetCode/easy_21$ListNode.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SF/leetCode/easy_21.class" afterPath="$PROJECT_DIR$/out/production/SF/leetCode/easy_21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetCode/mid_540.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/leetCode/easy_21.java" afterPath="$PROJECT_DIR$/src/leetCode/easy_21.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,11 +50,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="easy_101.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="easy_101.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leetCode/easy_101.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mid_540.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/leetCode/mid_540.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -137,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/leetCode/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/leetCode/easy_100.java" />
         <option value="$PROJECT_DIR$/src/leetCode/easy_101.java" />
+        <option value="$PROJECT_DIR$/src/leetCode/mid_540.java" />
       </list>
     </option>
   </component>
@@ -146,7 +148,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="531" />
     <option name="y" value="23" />
     <option name="width" value="749" />
@@ -455,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.easy_100">
+  <component name="RunManager" selected="Application.mid_540">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -613,14 +615,14 @@
       <module name="SF" />
       <envs />
     </configuration>
-    <configuration name="morris_110" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="mid_540" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="BinaryTree.*" />
+          <option name="PATTERN" value="leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="BinaryTree.morris_110" />
+      <option name="MAIN_CLASS_NAME" value="leetCode.mid_540" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -633,19 +635,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.morris_110" />
-      <item index="1" class="java.lang.String" itemvalue="Application.easy_70" />
-      <item index="2" class="java.lang.String" itemvalue="Application.esay_83" />
-      <item index="3" class="java.lang.String" itemvalue="Application.easy_86" />
-      <item index="4" class="java.lang.String" itemvalue="Application.easy_100" />
+      <item index="0" class="java.lang.String" itemvalue="Application.easy_70" />
+      <item index="1" class="java.lang.String" itemvalue="Application.esay_83" />
+      <item index="2" class="java.lang.String" itemvalue="Application.easy_86" />
+      <item index="3" class="java.lang.String" itemvalue="Application.easy_100" />
+      <item index="4" class="java.lang.String" itemvalue="Application.mid_540" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.easy_100" />
-        <item index="1" class="java.lang.String" itemvalue="Application.easy_86" />
-        <item index="2" class="java.lang.String" itemvalue="Application.esay_83" />
-        <item index="3" class="java.lang.String" itemvalue="Application.easy_70" />
-        <item index="4" class="java.lang.String" itemvalue="Application.morris_110" />
+        <item index="0" class="java.lang.String" itemvalue="Application.mid_540" />
+        <item index="1" class="java.lang.String" itemvalue="Application.easy_100" />
+        <item index="2" class="java.lang.String" itemvalue="Application.easy_86" />
+        <item index="3" class="java.lang.String" itemvalue="Application.esay_83" />
+        <item index="4" class="java.lang.String" itemvalue="Application.easy_70" />
       </list>
     </recent_temporary>
   </component>
@@ -668,7 +670,7 @@
       <workItem from="1527770174815" duration="1481000" />
       <workItem from="1527771895689" duration="76000" />
       <workItem from="1530981874306" duration="159000" />
-      <workItem from="1531727380395" duration="16977000" />
+      <workItem from="1531727380395" duration="18517000" />
     </task>
     <servers />
   </component>
@@ -681,7 +683,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114571000" />
+    <option name="totallyTimeSpent" value="116111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -693,7 +695,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="531" y="23" width="749" height="776" extended-state="0" />
+    <frame x="531" y="23" width="749" height="776" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -704,12 +706,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30547112" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547112" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21222411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31155014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31155014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37057993" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446959" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -743,13 +745,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SFShiYang/quickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="91" column="56" lean-forward="true" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SFShiYang/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1081,8 +1076,8 @@
         <state relative-caret-position="270">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#1010#1011#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1137,8 +1132,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leetCode/easy_101.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetCode/mid_540.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
