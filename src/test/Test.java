@@ -8,45 +8,16 @@ import java.util.concurrent.*;
 
 public class Test {
 
-    public static void main(String[] args) {
+    private static int hash(int h) {
+        h += (h << 15) ^ 0xffffcd7d; h ^= (h >>> 10);
+        h += (h << 3); h ^= (h >>> 6);
+        h += (h << 2) + (h << 14); return h ^ (h >>> 16);
+    }
 
-        String s = "){";
-        char[] s1 = s.toCharArray();
-        if (s1.length % 2 != 0) {
-            System.out.println(0);;
-        }
-        Stack<Character> stack = new Stack<Character>();
-        for (int i = 0; i < s1.length; i++) {
-            if (s1[i] == '(' || s1[i] == '[' || s1[i] == '{') {
-                stack.push(s1[i]);
-            }
-            if (s1[i] == ')') {
-                if(!stack.isEmpty()) {
-                    if (stack.peek() == '(') {
-                        stack.pop();
-                    }
-                }
-            }
-            if (s1[i] == ']') {
-                if(!stack.isEmpty()) {
-                    if (stack.peek() == '[') {
-                        stack.pop();
-                    }
-                }
-            }
-            if (s1[i] == '}') {
-                if(!stack.isEmpty()) {
-                    if (stack.peek() == '{') {
-                        stack.pop();
-                    }
-                }
-            }
-        }
-        if (stack.isEmpty()) {
-            System.out.println(1);;
-        } else {
-            System.out.println(0);;
-        }
+    public static void main(String[] args) {
+        System.out.println(Integer.parseInt("0001111", 2));
+        System.out.println(Integer.parseInt("0011111", 2) );
+        System.out.println(4 & 15);
     }
 }
 
