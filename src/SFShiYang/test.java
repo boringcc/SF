@@ -19,6 +19,7 @@ public class test {
                     stack.push(index-1);
                     stack.push(l);
                 }
+
                 if(r > index + 1){
                     stack.push(r);
                     stack.push(index + 1);
@@ -45,11 +46,9 @@ public class test {
     }
 
     public static void main(String[] args) {
-        int[] a = {5,4,3,2,1};
-        quickSort(a,0,4);
-        for(int i = 0;i < 5;i++){
-            System.out.println(a[i]);
-        }
+
+
+
     }
 
 
